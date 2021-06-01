@@ -1,0 +1,23 @@
+<Textinput>:
+    size_hint_y:None
+    height:40
+
+<TapeEditorWide>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        BoxLayout:
+            orientation: 'horizontal'
+            TEVideoSources:
+            TETapeInfo:
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "VideoPlayer"
+            TEClipInfo:
+                size_hint_x: None
+                width: 350
+        Splitter:
+            sizable_from: 'top'
+            TEClips:
+    
